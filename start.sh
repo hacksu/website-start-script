@@ -25,8 +25,8 @@ sudo service nginx start
 # Clone the app
 echo "Cloning the app from github..."
 mkdir -p /var/www
-chown hacksu /var/www
-chgrp hacksu /var/www
+chown -R hacksu /var/www
+chgrp -R hacksu /var/www
 cd /var/www
 [ -d Website ] && rm -rf Website
 git clone https://github.com/hacksu/Website
