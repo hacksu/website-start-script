@@ -1,7 +1,10 @@
 website-start-script
 ====================
 
-Clone this and run the bash script if the CS department ever does anything weird to the hacksu server that breaks the website.
+If the CS department ever does something weird and breaks the hacksu webiste,
+just clone this repository onto the server and execute `start.sh`. It will
+install nginx, node, npm, and forever, and then configure an nginx proxy, clone
+the Website repo, and run the app.
 
 So simple:
 ```
@@ -10,3 +13,4 @@ cd website-start-script
 chmod u+x start.sh
 sudo ./start.sh
 ```
+Annnnnd the website should be up and running.
