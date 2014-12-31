@@ -31,6 +31,8 @@ cd /var/www
 [ -d Website ] && rm -rf Website
 git clone https://github.com/hacksu/Website
 cd Website
+chown .
+npm install
 
 # Install forever
 echo "Installing forever package..."
