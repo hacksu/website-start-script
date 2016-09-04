@@ -32,12 +32,14 @@ cd /var/www
 git clone https://github.com/hacksu/Website
 cd Website
 chown .
+cp config-example.js config.js
+echo "Remember to set mailing list password in config.js"
 npm install
 
 # Install forever
 echo "Installing forever package..."
 npm install -g forever
-forever start app.js
 
 echo "All done, enjoy the site!"
-cd ~
+echo "forever start app.js"
+echo "Run after setting password in config.js"
