@@ -36,6 +36,10 @@ chown .
 cp config-example.js config.js
 echo "Remember to set mailing list password in config.js"
 npm install
+npm install typescript
+npm install -g webpack
+webpack
+
 
 # Install forever
 echo "Installing forever package..."
