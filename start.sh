@@ -7,6 +7,7 @@ sudo su -c 'rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-
 echo "Installing/updating node..."
 yum update -y
 yum install -y nodejs npm
+yum install -y mongdb mongdb-server
 npm install -g n
 n stable
 
